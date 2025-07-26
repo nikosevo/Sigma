@@ -3,6 +3,8 @@ import yaml
 import pandas as pd
 import sqlite3
 from datetime import date
+import numpy as np
+import altair as alt
 
 DB_FILE = "nutrition_log.db"
 
@@ -156,9 +158,7 @@ def get_entry_by_date(selected_date):
         return None
 entry = get_entry_by_date(log_date.isoformat())
 
-import matplotlib.pyplot as plt
-import numpy as np
-import altair as alt
+
 
 # After your existing code, replace your "Past Logs" display with tabs:
 
